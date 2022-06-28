@@ -11,7 +11,7 @@ libre.convertAsync = util.promisify(libre.convert);
 export class converter{
     constructor() {}
     async toPdf(pathOfInputFile,outputFileName){
-        if(!outputFile){
+        if(!outputFileName){
             throw new Error(`Error converting file:Specify output file name`);
         }
         try{
